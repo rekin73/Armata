@@ -15,19 +15,28 @@
     <script src="Siatka.js"></script>
     <script src="Armata.js"></script>
     <script src="Kula.js"></script>
+    <style>
+        #controls {
+            position: fixed;
+            z-index: 100;
+        }
+
+    </style>
 
 
-    
 
 </head>
 
 <body>
     <div id="controls">
-        <input type="range" name="cRotate" id="cRotate" min="0" max="360" step="1">kąt wystrzału<br>
+        <input type="range" name="cRotate" id="cRotate" min="0" max="360" step="1" value="0">kąt armaty
+        <br>
+        <input type="range" name="cAngle" id="cAngle" min="0" max="90" step="1" value="0">kąt wystrzału
+        <br>
     </div>
     <div id="root"></div>
 
-    
+
 
 </body>
 
