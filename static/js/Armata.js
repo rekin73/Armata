@@ -5,7 +5,7 @@ function Armata() {
     this.cannonRotate = function (angle) {
         console.log("Rotate:"+angle)
         console.log(angle * Math.PI / 360)
-        armata.rotateY(angle * Math.PI / 360)
+        armata.rotation(angle * Math.PI / 360)
     };
 
     var geometry = new THREE.CylinderGeometry(2, 2, 10, 32);
