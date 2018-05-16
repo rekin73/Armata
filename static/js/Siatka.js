@@ -6,7 +6,8 @@ function Siatka() {
         0.1, // minimalna renderowana odległość
         10000 // maxymalna renderowana odległość
     );
-    camera.position.set(-5,100,-50);
+
+    
     var renderer = new THREE.WebGLRenderer();
     renderer.setClearColor(0xffffff);
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -29,12 +30,18 @@ function Siatka() {
 
 
 
-
+    //var controls = new THREE.OrbitControls( camera );
     scene.add(axes);
     scene.add(armata.getArmata())
+    //armata.getArmata().add(camera);
+    camera.position=armata.getArmata().position;
+    camera.position.z-=20;
+    //camera.position.y-=10;
+    camera.position.x+=10;
     scene.add(plane)
+    
     function render() {
-
+        //controls.update();
         requestAnimationFrame(render);
 
         //ciągłe renderowanie / wyświetlanie widoku sceny nasza kamerą

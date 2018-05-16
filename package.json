@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "^1.7.3"
+  },
+  "author": "test",
+  "license": "ISC"
+}
